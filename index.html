@@ -1,164 +1,111 @@
+
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Clube TechLab</title>
-
-    <style>
-        body {
-            background-image: url("paginas/oficina.png");
-            background-size: cover;
-            
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: #eeeeee;
-            min-height: 100vh;
-        }
-    </style>
+    <title>Clube TechLab | Página inicial</title>
 </head>
 
 <body>
+    <header>
+        <h1>Clube TechLab</h1>
 
-    <h1>Clube TechLab</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paginas/atividades.html">Atividades</a></li>
+                <li><a href="paginas/mostra.html">Mostra</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>
-        O Clube TechLab é um espaço para descobrir tecnologia,
-        experimentar novas ideias e criar projetos em conjunto.
-    </p>
+    <main>
+        <section>
+            <h2>Bem-vindo ao clube</h2>
+            <p>
+                O Clube TechLab é um espaço para aprender, experimentar
+                tecnologia e partilhar projetos.
+            </p>
+            <p>
+                <a href="paginas/mostra.html">Conhece a mostra do clube</a>
+            </p>
+        </section>
 
-    <p>
-        <strong>Atenção:</strong> é importante guardar o trabalho
-        antes de fechar o VS Code.
-    </p>
+        <section>
+            <h2>Oficinas do clube</h2>
 
-    <h2>Atividades</h2>
+            <h3>Criação de páginas web</h3>
 
-    <p>
-        No clube, podemos aprender diferentes áreas da tecnologia
-        e trabalhar em projetos criativos.
-    </p>
+            <p>
+                Nesta oficina, aprendemos a utilizar HTML para criar
+                páginas web e apresentar os nossos projetos.
+            </p>
 
-    <h3>Oficina de páginas web</h3>
+            <figure>
+                <img src="imagens/oficina.png"
+                     alt="Oficina de tecnologia"
+                     width="500">
 
-    <p>
-        Vamos aprender a criar páginas web e apresentar os nossos
-        projetos. Queremos <em>criar</em> ideias novas em conjunto.
-    </p>
+                <figcaption>
+                    Atividades do Clube TechLab.
+                </figcaption>
+            </figure>
 
-    <ul>
-        <li>Programação</li>
-        <li>Criação de páginas web</li>
-        <li>Robótica</li>
-    </ul>
+            <h3>Robótica</h3>
 
-    <h2>Como participar</h2>
+            <p>
+                Nesta atividade, exploramos a robótica e aprendemos
+                a construir e testar pequenos projetos.
+            </p>
 
-    <p>
-        Para participar nas atividades do clube, segue estes passos:
-    </p>
+            <h3>Programação de jogos</h3>
 
-    <ol>
-        <li>Escolher uma atividade.</li>
-        <li>Participar nas experiências do clube.</li>
-        <li>Criar e partilhar um projeto.</li>
-    </ol>
+            <p>
+                Aprendemos conceitos de programação e desenvolvemos
+                ideias para criar jogos simples.
+            </p>
+        </section>
 
-    <figure>
-        <img
-            src="imagens/oficina.png"
-            alt="Ciclo do clube: planear, construir, testar e regressar ao planeamento para melhorar."
-            width="600"
-            height="240"
-        >
+        <section>
+            <h2>Quando nos encontramos</h2>
 
-        <figcaption>
-            Como desenvolvemos os projetos.
-            Fonte: esquema de treino da Aula 06 de CPW,
-            fornecido no Moodle.
-        </figcaption>
-    </figure>
+            <table border="1">
+                <caption>Horário das oficinas do clube (exemplo fictício)</caption>
 
-    <p>
-        <a href="paginas/atividades.html">
-            Conhecer as atividades do clube
-        </a>
-    </p>
+                <thead>
+                    <tr>
+                        <th scope="col">Oficina</th>
+                        <th scope="col">Dia</th>
+                        <th scope="col">Hora</th>
+                    </tr>
+                </thead>
 
-    <p>
-        <a href="https://www.theodinproject.com/">
-            Visitar o The Odin Project
-        </a>
-    </p>
+                <tbody>
+                    <tr>
+                        <th scope="row">Páginas web</th>
+                        <td>Terça-feira</td>
+                        <td>14h30</td>
+                    </tr>
 
+                    <tr>
+                        <th scope="row">Robótica</th>
+                        <td>Quarta-feira</td>
+                        <td>15h00</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Jogos</th>
+                        <td>Quinta-feira</td>
+                        <td>14h30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Clube TechLab · Projeto escolar de CPW</p>
+    </footer>
 </body>
-
-<body>
-  <header>
-    <h1>Atividades do clube</h1>
-
-    <nav>
-      <ul>
-        <li><a href="../index.html">Início</a></li>
-        <li><a href="atividades.html">Atividades</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Oficinas do clube</h2>
-
-      <!-- Coloca aqui os textos e a imagem
-           das atividades que já tinhas. -->
-
-    </section>
-
-    <section>
-      <h2>Quando nos encontramos</h2>
-
-      
-<table>
-  <caption>Horário das oficinas do clube (exemplo fictício)</caption>
-
-  <thead>
-    <tr>
-      <th scope="col">Oficina</th>
-      <th scope="col">Dia</th>
-      <th scope="col">Hora</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <th scope="row">Páginas web</th>
-      <td>Terça-feira</td>
-      <td>14h30</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Robótica</th>
-      <td>Quarta-feira</td>
-      <td>15h00</td>
-    </tr>
-
-    <tr>
-      <th scope="row">Jogos</th>
-      <td>Quinta-feira</td>
-      <td>14h30</td>
-    </tr>
-  </tbody>
-</table>
-
-
-    </section>
-  </main>
-
-  <footer>
-    <p>Clube de Tecnologia · Projeto escolar de CPW</p>
-  </footer>
-</body>
-
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição na Mostra de Robótica | Clube TechLab</title>
+</head>
+<body>
+    <header>
+        <h1>Inscrição na Mostra de Robótica</h1>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="mostra.html">Mostra</a></li>
+                <li><a href="inscrição-mostra.html" aria-current="page">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dados de participação</h2>
+            <p>
+                Preenche os teus dados e escolhe a sessão em que gostarias
+                de participar. O formulário não envia nem guarda as informações.
+            </p>
+            <form id="form-inscricao">
+                <p>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="sessao">Escolhe uma sessão</label><br>
+                    <select id="sessao" name="sessao" required>
+                        <option value="" selected disabled>Seleciona uma sessão</option>
+                        <option value="robotica-programacao">Robótica e programação — 15h00–16h00</option>
+                        <option value="projetos-prototipos">Projetos e protótipos — 16h15–17h15</option>
+                    </select>
+                </p>
+                <button type="submit">Submeter inscrição</button>
+            </form>
+            <p id="resultado" role="status" aria-live="polite"></p>
+            <p><a href="mostra.html">Voltar à página da mostra</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Clube TechLab · Projeto escolar de CPW</p>
+    </footer>
+
+    <script>
+        document.getElementById("form-inscricao").addEventListener("submit", function (event) {
+            event.preventDefault();
+            document.getElementById("resultado").textContent =
+                "Formulário preenchido com sucesso. Os dados não foram enviados nem guardados.";
+        });
+    </script>
+</body>
+</html>
