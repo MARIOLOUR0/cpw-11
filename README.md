@@ -57,5 +57,7 @@ gerados para este projeto.
   não aplicados. O caminho `estilos.css` foi reposto.
 - Nu HTML Checker: os sete documentos continuam válidos.
 - O commit `275e2df` foi enviado para `origin/main`.
-- Site publicado: a nova execução de Pages ainda está em curso, depois de a
-  compilação passar. O CSS publicado continua por verificar até o deploy acabar.
+- GitHub Pages: a compilação e publicação da versão com CSS terminaram com
+  sucesso.
+- Navegador no site publicado: a página inicial e a galeria carregam o CSS
+  comum e apresentam as mesmas cores de fundo, ligações e cabeçalho.
