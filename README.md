@@ -10,7 +10,7 @@ fornecidos pela plataforma H5P.
 
 ### Registo de testes
 
-- Validação local com Nu HTML Checker: os seis documentos HTML passaram sem
+- Validação local com Nu HTML Checker: os sete documentos HTML passaram sem
   erros. A validação detetou cercas de Markdown indevidas em
   `paginas/atividades.html`; foram removidas e a validação foi repetida.
 - Navegador: o sinal MP3 e o vídeo MP4 carregaram e começaram a reproduzir; os
@@ -18,7 +18,11 @@ fornecidos pela plataforma H5P.
 - Teste de caminho inválido: o áudio falhou ao carregar (`networkState` 3). O
   caminho original foi reposto e o áudio carregou novamente sem erro.
 - Navegação interna para a galeria e ligação de regresso ao início verificadas.
-- Publicação: por verificar depois do envio deste commit.
+- O commit local `3a04626` foi criado, mas os envios para `origin/main` e para
+  um ramo novo foram recusados pelo servidor (`fatal error in commit_refs_rules`).
+- O endereço GitHub Pages do projeto devolve HTTP 404; não foi possível
+  publicar nem testar a galeria no site remoto.
 
 **Conclusão:** a galeria e a navegação estão completas e os testes locais
 passaram. Os ficheiros de mídia são originais e foram gerados para este projeto.
+A publicação remota continua bloqueada pela regra do servidor GitHub.
