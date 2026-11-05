@@ -74,6 +74,14 @@ section {
     background: var(--color-surface);
 }
 
+.cartao {
+    background: #eaf3f4;
+    padding: 1.25rem;
+    border: 1px solid #b8d5d7;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+}
+
 h1,
 h2,
 h3 {
@@ -115,6 +123,7 @@ figure {
     margin: 1.25rem 0;
 }
 
+.cartao img,
 figure img,
 video {
     display: block;

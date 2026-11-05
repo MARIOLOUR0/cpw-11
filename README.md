@@ -60,3 +60,26 @@ gerados para este projeto.
   sucesso.
 - Navegador no site publicado: a página inicial e a galeria carregam o CSS
   comum e apresentam as mesmas cores de fundo, ligações e cabeçalho.
+
+## Aula 11 — Cartões das atividades
+
+Na página de atividades, as oficinas de páginas web, programação e robótica e
+programação de jogos usam `article` com a classe comum `cartao`. Uma única regra
+em `estilos.css` dá-lhes fundo azul-claro, preenchimento interior, contorno e
+cantos arredondados; a margem inferior separa os cartões entre si.
+
+### Registo de testes
+
+- Atividades carrega a folha externa; os três `article.cartao` recebem a regra
+  comum de preenchimento, contorno, espaçamento e cantos.
+- Alterações isoladas de `padding`, `border` e `margin-bottom`: verificadas no
+  navegador; cada alteração refletiu-se nos três cartões.
+- Alteração temporária da cor de fundo comum: os três cartões mudaram juntos;
+  o estilo original foi reposto.
+- A janela estreita revelou que a imagem da oficina ultrapassava o cartão; a
+  imagem foi limitada à largura do cartão. Com viewport de 390 px, o documento
+  ficou com 375 px de largura, sem overflow horizontal.
+- A página inicial e a página de atividades abriram no navegador; o recurso da
+  imagem da oficina carregou.
+- Nu HTML Checker: `paginas/atividades.html` sem erros. `git diff --check` sem
+  problemas.
