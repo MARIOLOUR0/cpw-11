@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição | Clube TechLab</title>
+</head>
+<body>
+    <header>
+        <h1>Inscrição nas oficinas</h1>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="atividades.html">Atividades</a></li>
+                <li><a href="inscricao.html" aria-current="page">Inscrição</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Escolhe uma oficina</h2>
+            <p>Este é um protótipo com dados fictícios. As inscrições não são registadas.</p>
+
+            <form action="inscricao.html" method="get">
+                <p>
+                    <label for="nome">Nome *</label><br>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required>
+                </p>
+                <p>
+                    <label for="email">Email *</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="oficina">Oficina *</label><br>
+                    <select id="oficina" name="oficina" required>
+                        <option value="" selected disabled>Escolhe uma oficina</option>
+                        <option value="paginas-web">Páginas web</option>
+                        <option value="robotica">Robótica</option>
+                        <option value="jogos">Jogos</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem (opcional)</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea>
+                </p>
+                <button type="submit">Testar inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Clube TechLab · Projeto escolar de CPW</p>
+    </footer>
+</body>
+</html>
