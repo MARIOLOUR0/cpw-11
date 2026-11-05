@@ -5,17 +5,20 @@
 A galeria usa o áudio de treino `media/sinal.mp3`, o vídeo de treino
 `media/oficina.mp4` e o cartaz `imagens/capa-video.png`. O áudio é um sinal
 sintético original; o vídeo é uma animação original de uma oficina fictícia.
+Os três ficheiros foram criados localmente para este projeto; não são ficheiros
+fornecidos pela plataforma H5P.
 
 ### Registo de testes
 
-- Estrutura e caminhos HTML: a validar depois de os ficheiros de mídia serem
-  adicionados ao projeto.
-- Reprodução do áudio e do vídeo: pendente; `media/sinal.mp3` e
-  `media/oficina.mp4` não estavam disponíveis na cópia de trabalho.
-- Teste de caminho de áudio incorreto e reposição: pendente até os ficheiros
-  estarem disponíveis.
-- Validação HTML e publicação: pendentes até os ficheiros de mídia estarem
-  disponíveis.
+- Validação local com Nu HTML Checker: os seis documentos HTML passaram sem
+  erros. A validação detetou cercas de Markdown indevidas em
+  `paginas/atividades.html`; foram removidas e a validação foi repetida.
+- Navegador: o sinal MP3 e o vídeo MP4 carregaram e começaram a reproduzir; os
+  controlos estão disponíveis, não há reprodução automática e o cartaz aparece.
+- Teste de caminho inválido: o áudio falhou ao carregar (`networkState` 3). O
+  caminho original foi reposto e o áudio carregou novamente sem erro.
+- Navegação interna para a galeria e ligação de regresso ao início verificadas.
+- Publicação: por verificar depois do envio deste commit.
 
-**Conclusão:** a página da galeria e a navegação estão preparadas, mas a galeria
-não deve ser publicada enquanto os ficheiros de mídia estiverem em falta.
+**Conclusão:** a galeria e a navegação estão completas e os testes locais
+passaram. Os ficheiros de mídia são originais e foram gerados para este projeto.
