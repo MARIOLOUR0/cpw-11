@@ -16,13 +16,12 @@ o azul-petróleo identifica os títulos e as ligações. A tipografia do sistema
 o espaçamento generoso, os cantos arredondados e os controlos de mídia
 adaptáveis tornam as páginas mais confortáveis de ler em ecrãs diferentes.
 
-Os valores foram personalizados para este clube: a cor de fundo (`#f1f5f9`)
-suaviza o fundo branco do navegador; a cor principal (`#006d77`) dá às ligações
-uma identidade comum; a largura máxima de `68rem` limita o comprimento das
-linhas; e o espaçamento de `2rem` em redor do conteúdo torna a leitura menos
-compacta. O guião da primeira aula pede autenticação no Moodle, por isso o CSS
-foi definido a partir do objetivo desta tarefa, não de valores de exemplo a
-que não foi possível aceder.
+Face ao exemplo do guião, foram alterados mais de três valores: o fundo
+`#faf9f6` passou a `#f1f5f9`, criando uma tonalidade azul-clara; o texto
+`#202b35` passou a `#243447`; a fonte Arial passou para a família do sistema;
+o título `#215a89` passou a azul-petróleo; e as ligações `#174f78` passaram a
+`#006d77`. A margem simples de 24 px foi substituída por um conteúdo centrado
+e responsivo, com largura máxima de `68rem` e espaçamento confortável.
 
 ### Registo de testes
 
