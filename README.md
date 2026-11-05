@@ -18,11 +18,12 @@ fornecidos pela plataforma H5P.
 - Teste de caminho inválido: o áudio falhou ao carregar (`networkState` 3). O
   caminho original foi reposto e o áudio carregou novamente sem erro.
 - Navegação interna para a galeria e ligação de regresso ao início verificadas.
-- O commit local `3a04626` foi criado, mas os envios para `origin/main` e para
-  um ramo novo foram recusados pelo servidor (`fatal error in commit_refs_rules`).
-- O endereço GitHub Pages do projeto devolve HTTP 404; não foi possível
-  publicar nem testar a galeria no site remoto.
+- Os commits `3a04626` e `e852bdf` foram enviados para `origin/main`; a branch
+  local e a remota estão sincronizadas.
+- O GitHub Pages ainda devolve HTTP 404 e a API do GitHub indica que Pages não
+  está configurado neste repositório. A publicação remota não pôde ser testada.
 
 **Conclusão:** a galeria e a navegação estão completas e os testes locais
 passaram. Os ficheiros de mídia são originais e foram gerados para este projeto.
-A publicação remota continua bloqueada pela regra do servidor GitHub.
+Para publicar, ativa GitHub Pages nas definições do repositório, selecionando
+`main` e a pasta raiz como origem.
