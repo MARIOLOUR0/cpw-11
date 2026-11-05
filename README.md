@@ -100,3 +100,25 @@ ao espaço disponível.
 - O contentor apresenta `display: flex`, `flex-wrap: wrap` e 16 px de intervalo;
   a imagem da oficina carregou.
 - Nu HTML Checker e `git diff --check`: sem erros.
+
+## A4 · 01 — Distribuir o espaço com flex
+
+Na página inicial, a secção «Próxima sessão» apresenta a informação da sessão e
+uma lista de quatro materiais dentro de `.sessao`. A informação principal usa
+`flex: 2 1 200px` e o painel de materiais usa `flex: 1 1 200px`; ambos permitem
+encolher, têm `min-width: 0` e quebram palavras longas quando necessário.
+
+### Previsões e registo de testes
+
+- Previsão a 1100 px: os dois painéis mantêm-se na mesma linha, com a informação
+  principal a receber aproximadamente o dobro do espaço livre.
+- Previsão a 700 px: os painéis continuam na mesma linha, mas ficam mais
+  estreitos; os textos quebram sem provocar deslocamento horizontal.
+- Comparação temporária: com o crescimento da informação principal em 0, o
+  painel principal ficou na base de 200 px e o painel de materiais recebeu o
+  espaço livre. O fator original 2 foi reposto.
+- Observado a 1100 px: os painéis ficaram com 575 px e 388 px, respetivamente,
+  na mesma linha.
+- Observado a 700 px: ficaram com 314 px e 257 px, respetivamente; o documento
+  não teve deslocamento horizontal e os textos permaneceram legíveis.
+- HTML validado com Nu HTML Checker; `git diff --check` sem problemas.

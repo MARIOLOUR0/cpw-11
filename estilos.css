@@ -91,6 +91,31 @@ section {
     flex: 1 1 17rem;
 }
 
+.sessao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.sessao-info,
+.sessao-material {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    padding: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.6rem;
+}
+
+.sessao-info {
+    flex: 2 1 200px;
+}
+
+.sessao-material {
+    flex: 1 1 200px;
+    background: #eaf3f4;
+}
+
 h1,
 h2,
 h3 {
