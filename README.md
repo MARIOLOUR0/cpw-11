@@ -20,10 +20,10 @@ fornecidos pela plataforma H5P.
 - Navegação interna para a galeria e ligação de regresso ao início verificadas.
 - Os commits `3a04626` e `e852bdf` foram enviados para `origin/main`; a branch
   local e a remota estão sincronizadas.
-- O GitHub Pages ainda devolve HTTP 404 e a API do GitHub indica que Pages não
-  está configurado neste repositório. A publicação remota não pôde ser testada.
+- A origem do GitHub Pages foi guardada como `main` / raiz. A compilação Jekyll
+  passou, mas o passo de publicação falhou com erro interno HTTP 500 do GitHub.
+- O site ainda devolve HTTP 404 até o GitHub concluir uma publicação com sucesso.
 
 **Conclusão:** a galeria e a navegação estão completas e os testes locais
 passaram. Os ficheiros de mídia são originais e foram gerados para este projeto.
-Para publicar, ativa GitHub Pages nas definições do repositório, selecionando
-`main` e a pasta raiz como origem.
+A publicação está pendente de uma execução bem-sucedida do GitHub Pages.
