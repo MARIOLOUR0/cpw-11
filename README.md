@@ -56,4 +56,6 @@ gerados para este projeto.
   ficheiro CSS inexistente produziu um erro de carregamento e deixou os estilos
   não aplicados. O caminho `estilos.css` foi reposto.
 - Nu HTML Checker: os sete documentos continuam válidos.
-- Commit, envio e teste da versão publicada com CSS: pendentes.
+- O commit `275e2df` foi enviado para `origin/main`.
+- Site publicado: a nova execução de Pages ainda está em curso, depois de a
+  compilação passar. O CSS publicado continua por verificar até o deploy acabar.
