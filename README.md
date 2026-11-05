@@ -18,12 +18,13 @@ fornecidos pela plataforma H5P.
 - Teste de caminho inválido: o áudio falhou ao carregar (`networkState` 3). O
   caminho original foi reposto e o áudio carregou novamente sem erro.
 - Navegação interna para a galeria e ligação de regresso ao início verificadas.
-- Os commits `3a04626` e `e852bdf` foram enviados para `origin/main`; a branch
-  local e a remota estão sincronizadas.
-- A origem do GitHub Pages foi guardada como `main` / raiz. A compilação Jekyll
-  passou, mas o passo de publicação falhou com erro interno HTTP 500 do GitHub.
-- O site ainda devolve HTTP 404 até o GitHub concluir uma publicação com sucesso.
+- Publicação: a primeira tentativa compilou o site mas falhou durante o deploy
+  com HTTP 500 no GitHub. Uma nova execução terminou com sucesso.
+- Site publicado: a página inicial e a galeria abriram. No navegador, os dois
+  ficheiros de mídia carregaram (`readyState` 4) e começaram a reproduzir; não
+  houve erros e o cartaz do vídeo carregou.
+- Os commits da galeria e da publicação foram enviados para `origin/main`.
 
 **Conclusão:** a galeria e a navegação estão completas e os testes locais
-passaram. Os ficheiros de mídia são originais e foram gerados para este projeto.
-A publicação está pendente de uma execução bem-sucedida do GitHub Pages.
+e no site publicado passaram. Os ficheiros de mídia são originais e foram
+gerados para este projeto.
