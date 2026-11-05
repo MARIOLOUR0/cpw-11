@@ -83,3 +83,20 @@ cantos arredondados; a margem inferior separa os cartões entre si.
   imagem da oficina carregou.
 - Nu HTML Checker: `paginas/atividades.html` sem erros. `git diff --check` sem
   problemas.
+
+## Aula 12 — Flexbox nas atividades
+
+Os três cartões estão agrupados em `.cartoes-atividades`, um contentor Flexbox
+com espaçamento entre cartões e quebra automática de linha. Cada cartão usa
+`flex: 1 1 17rem` para partir de uma largura de referência de 17rem e adaptar-se
+ao espaço disponível.
+
+### Registo de testes
+
+- Janela larga (1280 px): três cartões na mesma linha, cada um com cerca de
+  330 px.
+- Janela estreita (390 px): cartões empilhados, com cerca de 301 px; textos
+  mantêm-se legíveis e não há deslocamento horizontal (documento com 375 px).
+- O contentor apresenta `display: flex`, `flex-wrap: wrap` e 16 px de intervalo;
+  a imagem da oficina carregou.
+- Nu HTML Checker e `git diff --check`: sem erros.

@@ -74,12 +74,21 @@ section {
     background: var(--color-surface);
 }
 
+.cartoes-atividades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .cartao {
     background: #eaf3f4;
     padding: 1.25rem;
     border: 1px solid #b8d5d7;
-    margin-bottom: 1rem;
     border-radius: 0.6rem;
+}
+
+.cartoes-atividades .cartao {
+    flex: 1 1 17rem;
 }
 
 h1,
