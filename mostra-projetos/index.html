@@ -12,11 +12,23 @@
 </head>
 <body>
   <main class="container py-4">
-    <h1>Mostra de projetos</h1>
-    <p>Projetos de robótica, jogos e páginas web criados no nosso clube.</p>
+    <header class="row g-3 mb-4">
+      <div class="col-12 col-md-8">
+        <h1>Mostra de projetos</h1>
+        <p>Projetos de robótica, jogos e páginas web criados no nosso clube.</p>
+        <a href="#sobre" class="btn btn-primary">Sobre a mostra</a>
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="imagens/mostra.png" class="img-fluid"
+          alt="Etapas de um projeto: planear, construir, testar e melhorar.">
+      </div>
+    </header>
     <div class="row g-3">
       <div class="col-12 col-md-6 col-lg-4">
         <article class="card h-100">
+          <img class="card-img-top img-fluid"
+            src="../imagens/robotica.jpg"
+            alt="Robôs montados para um projeto de robótica.">
           <div class="card-body">
             <h2 class="card-title h5">Robótica</h2>
             <p class="card-text">Construímos e programamos robôs para resolver desafios.</p>
@@ -25,6 +37,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4">
         <article class="card h-100">
+          <img class="card-img-top img-fluid"
+            src="../imagens/capa-video.png"
+            alt="Ilustração de uma oficina do clube com uma pessoa e um robô.">
           <div class="card-body">
             <h2 class="card-title h5">Jogo educativo</h2>
             <p class="card-text">Criamos um jogo que ensina enquanto diverte.</p>
@@ -33,6 +48,9 @@
       </div>
       <div class="col-12 col-md-6 col-lg-4">
         <article class="card h-100">
+          <img class="card-img-top img-fluid"
+            src="../imagens/oficina.png"
+            alt="Diagrama do ciclo: planear, construir, testar e rever.">
           <div class="card-body">
             <h2 class="card-title h5">Site do clube</h2>
             <p class="card-text">Apresentamos as atividades e projetos do Clube TechLab.</p>
@@ -40,6 +58,10 @@
         </article>
       </div>
     </div>
+    <section id="sobre" class="mt-4">
+      <h2>Sobre a mostra</h2>
+      <p>A mostra reúne projetos de robótica, jogos e páginas web criados pela turma. Queremos partilhar as ideias, o processo de criação e aquilo que aprendemos.</p>
+    </section>
   </main>
 </body>
 </html>
