@@ -1,0 +1,48 @@
+body {
+    background: #f1f5f9;
+    color: #243447;
+}
+
+.hero {
+    background: linear-gradient(120deg, #123b52, #006d77);
+    color: #fff;
+}
+
+.hero h1 {
+    max-width: 16ch;
+}
+
+.event-info {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.section-kicker {
+    color: #006d77;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.activity-image {
+    height: 13rem;
+    object-fit: cover;
+}
+
+.gallery-image {
+    height: clamp(16rem, 42vw, 26rem);
+    object-fit: cover;
+}
+
+.carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 1rem 1rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.callout {
+    background: #e4f1f1;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descobre as atividades, horários e informações da Mostra TechLab.">
+    <title>Mostra TechLab | Clube TechLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="evento.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">Clube TechLab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navegacao" aria-controls="navegacao"
+                    aria-expanded="false" aria-label="Abrir navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navegacao">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="evento.html">Evento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mostra.html">Mostra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero py-5">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <p class="text-uppercase fw-semibold mb-2">Um evento fictício do Clube TechLab</p>
+                    <h1 class="display-4 fw-bold">Mostra TechLab: tecnologia em ação</h1>
+                    <p class="lead mb-4">
+                        Uma tarde para experimentar, construir e partilhar ideias.
+                        Traz a curiosidade — nós tratamos da tecnologia!
+                    </p>
+                    <a class="btn btn-light btn-lg fw-semibold" href="#atividades">
+                        Ver atividades
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-info p-4 rounded-4">
+                        <h2 class="h5 fw-bold">Marca na agenda</h2>
+                        <p class="mb-1"><strong>Quando:</strong> sábado, das 14h às 17h</p>
+                        <p class="mb-0"><strong>Onde:</strong> auditório da escola</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <section class="mb-5" aria-labelledby="atividades">
+            <div class="text-center mb-4">
+                <p class="section-kicker">Experimenta ao teu ritmo</p>
+                <h2 id="atividades" class="fw-bold">Atividades para descobrir</h2>
+                <p class="text-secondary">Escolhe uma oficina ou passa por todas.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="../imagens/oficina.png" class="card-img-top activity-image"
+                             alt="Diagrama da oficina: planear, construir, testar e melhorar.">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Oficina de páginas web</h3>
+                            <p class="card-text">
+                                Cria uma página simples e aprende a organizar ideias
+                                com títulos, texto e imagens.
+                            </p>
+                            <span class="badge text-bg-primary mt-auto align-self-start">14h15 · Sala 1</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="../imagens/robotica.jpg" class="card-img-top activity-image"
+                             alt="Robôs e componentes eletrónicos numa mesa de demonstração.">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Desafio de robótica</h3>
+                            <p class="card-text">
+                                Programa um pequeno robô para percorrer um trajeto
+                                e superar desafios em equipa.
+                            </p>
+                            <span class="badge text-bg-primary mt-auto align-self-start">15h · Sala TechLab</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm">
+                        <img src="../imagens/capa-video.png" class="card-img-top activity-image"
+                             alt="Ilustração de uma oficina com uma pessoa, um computador e um pequeno robô.">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title h5">Laboratório de jogos</h3>
+                            <p class="card-text">
+                                Inventa uma personagem e descobre como transformar
+                                uma ideia num jogo interativo.
+                            </p>
+                            <span class="badge text-bg-primary mt-auto align-self-start">16h · Sala 2</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 align-items-start mb-5" aria-label="Galeria e perguntas frequentes">
+            <div class="col-lg-7">
+                <h2 class="h3 fw-bold mb-3">Um olhar sobre a mostra</h2>
+                <div id="galeriaMostra" class="carousel slide rounded-4 overflow-hidden"
+                 data-bs-ride="false" role="region" aria-roledescription="carrossel"
+                 aria-label="Imagens das atividades do evento">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galeriaMostra" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Imagem 1"></button>
+                        <button type="button" data-bs-target="#galeriaMostra" data-bs-slide-to="1"
+                                aria-label="Imagem 2"></button>
+                        <button type="button" data-bs-target="#galeriaMostra" data-bs-slide-to="2"
+                                aria-label="Imagem 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagens/robotica.jpg" class="d-block w-100 gallery-image"
+                                 alt="Robôs e componentes eletrónicos preparados para uma demonstração.">
+                            <div class="carousel-caption">
+                                <p class="mb-0">Experimenta a robótica em equipa.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagens/oficina.png" class="d-block w-100 gallery-image"
+                                 alt="Etapas de planeamento, construção e teste de um projeto.">
+                            <div class="carousel-caption">
+                                <p class="mb-0">Planeia, constrói e testa as tuas ideias.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagens/capa-video.png" class="d-block w-100 gallery-image"
+                                 alt="Ilustração de uma oficina de tecnologia e robótica.">
+                            <div class="carousel-caption">
+                                <p class="mb-0">Há sempre algo novo para descobrir.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#galeriaMostra"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Imagem anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#galeriaMostra"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Imagem seguinte</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <h2 class="h3 fw-bold mb-3">Dúvidas frequentes</h2>
+                <div class="accordion" id="duvidasEvento">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#respostaIdade" aria-expanded="true"
+                                    aria-controls="respostaIdade">
+                                Quem pode participar?
+                            </button>
+                        </h3>
+                        <div id="respostaIdade" class="accordion-collapse collapse show"
+                             data-bs-parent="#duvidasEvento">
+                            <div class="accordion-body">
+                                Todas as pessoas curiosas por tecnologia. Não é preciso
+                                ter experiência nem trazer equipamento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#respostaCusto" aria-expanded="false"
+                                    aria-controls="respostaCusto">
+                                A participação tem algum custo?
+                            </button>
+                        </h3>
+                        <div id="respostaCusto" class="accordion-collapse collapse"
+                             data-bs-parent="#duvidasEvento">
+                            <div class="accordion-body">
+                                Não. A entrada e as atividades são gratuitas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#respostaMaterial" aria-expanded="false"
+                                    aria-controls="respostaMaterial">
+                                    Tenho de levar computador?
+                            </button>
+                        </h3>
+                        <div id="respostaMaterial" class="accordion-collapse collapse"
+                             data-bs-parent="#duvidasEvento">
+                            <div class="accordion-body">
+                                    Não. O clube disponibiliza o equipamento necessário
+                                    para experimentar todas as atividades.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#respostaAcompanhante" aria-expanded="false"
+                                    aria-controls="respostaAcompanhante">
+                                Posso levar alguém comigo?
+                            </button>
+                        </h3>
+                        <div id="respostaAcompanhante" class="accordion-collapse collapse"
+                             data-bs-parent="#duvidasEvento">
+                            <div class="accordion-body">
+                                Claro! A mostra é aberta à comunidade escolar e às famílias.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="callout rounded-4 p-4 p-md-5 text-center">
+            <h2 class="fw-bold">Vem dar vida às tuas ideias</h2>
+            <p class="mb-4">Escolhe uma oficina e prepara-te para uma tarde de descoberta.</p>
+            <a class="btn btn-primary btn-lg" href="#atividades">Explorar atividades</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-4 mt-5">
+        <p class="mb-0">Clube TechLab · Evento fictício para projeto escolar de CPW</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+</html>

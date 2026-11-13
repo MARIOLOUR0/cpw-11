@@ -61,6 +61,13 @@ gerados para este projeto.
 - Navegador no site publicado: a página inicial e a galeria carregam o CSS
   comum e apresentam as mesmas cores de fundo, ligações e cabeçalho.
 
+## Uma página para o teu evento
+
+A página `paginas/evento.html` apresenta a Mostra TechLab, um evento fictício,
+com cartões Bootstrap para as atividades, um accordion para as dúvidas e um
+carrossel para as imagens. A página inicial inclui uma ligação para o evento;
+os estilos específicos estão em `paginas/evento.css`.
+
 ## Aula 11 — Cartões das atividades
 
 Na página de atividades, as oficinas de páginas web, programação e robótica e
