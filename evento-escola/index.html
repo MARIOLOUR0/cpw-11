@@ -11,12 +11,39 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom"
+     aria-label="Navegação principal">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#inicio">Festival Ciência</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menuEvento" aria-controls="menuEvento"
+            aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuEvento">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#atividades">Atividades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#perguntas">Perguntas frequentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galeria">Galeria</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <main class="container py-4">
-  <header class="mb-4">
+  <header id="inicio" class="mb-4">
     <h1>Festival de Criatividade e Ciência</h1>
     <p>Uma tarde para experimentar, jogar e ver o mundo com outros olhos.</p>
   </header>
-  <section aria-labelledby="tituloAtividades">
+  <section id="atividades" aria-labelledby="tituloAtividades">
     <h2 id="tituloAtividades">Atividades</h2>
     <div class="row g-3">
 <div class="col-12 col-md-4">
